@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	height: auto;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 0.05em;
+}
+.wrapper {
+	height: auto;
+	max-width: 1240px;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+header {
+	height: 108px;
+	max-width: 1920px;
+}
+header ul li {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 1200px;
+	height: 108px;
+	text-transform: uppercase;
+	margin-left: 45px;
+	font-size: 18px;
+	font-weight: 600;
+	vertical-align: middle;
+	margin-top: 40px;
+   /* padding-top: 20px;*/
+}
+header ul li a {
+	text-decoration: none;
+	color: black;
+}
+.burger, .hidden_logo {
+	display: none;
+}
+img  {
+height: auto;
+width: auto;
+}
+/*header .blue_line {
+	height: 8px;
+	width: 100%;
+	background-color: #0ce7e3;
+	margin-top: 23px;
+}*/
+header:after {
+    display: block;
+    content: " ";
+    height: 8px;
+    background-color: #0be7e5;
+    width: 100%;
+    z-index: 20;
+    position: relative;
+    top: 8px;
+}
+main {
+	height: auto;
+	width: calc(66% - 50px);
+	padding-top: 75px;
+	padding-bottom: 75px;
+	/*display: inline-flex;
+	flex-direction: row;
+	justify-content: center;*/
+}
+main, aside {
+	display: flex;
+	flex-direction: column;
+}
+aside ul li {
+	list-style-type: none;
+}
+aside ul li:not(.active):before {
+     content: " ";
+     background-color: #0be7e5;
+    height: 6px;
+    border-radius: 100%;
+    width: 6px;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.content {
+	display: block;
+	height: auto;
+	max-width: 1240px;
+    width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	}
+
+main h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 72px;
+	margin-bottom: 15px;
+}
+main .small_line {
+height: 3px;
+width: 40px;
+background-color: #0ce7e3;
+margin-bottom: 35px;
+
+}
+main .service p {
+	margin-top: 42px;
+	margin-bottom: 34px;
+	line-height: 21px;
+	letter-spacing: 0,05em;
+}
+
+.service h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 53px;
+	margin-bottom: 30px;
+}
+ aside {
+	width: calc(33%);
+	    padding-top: 135px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    line-height: 51px;
+    letter-spacing: 0,1em;
+}
+aside h2 {
+font-size: 24px;
+}
+.blue_line_3 {
+	height: 1px;
+	max-width: 95%;
+	background-color: #0ce7e3;
+}
+.gallery {
+	height: auto;
+	width: 100%;
+}
+.gallery h2 {
+	font-size: 24px;
+    margin-bottom: 20px;
+}
+.img_gallery {
+width: 390px;
+height: 406px;
+margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 0;
+    letter-spacing: 0;
+}
+.img_gallery img {
+    border-radius: 10px;
+    width: calc(50% - 8px);
+    height: auto;
+    vertical-align: top;
+    margin-bottom: 16px;
+}
+aside .img_gallery img:nth-of-type(2n + 1) {
+    margin-right: 16px;
+    display: inline-block;
+}
+aside .h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+aside .news {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+aside .news img {
+    width: 95%;
+    height: auto;
+}
+aside .news .h4 {
+    margin-top: 10px;
+   /* padding-left: 0px;
+    padding-right: 0px;*/
+    font-weight: 600;
+}
+
+.after_table img {
+    display: inline-block;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.after_table img:nth-of-type(2n + 1) {
+    float: left;
+    margin-right: 30px;
+}
+.after_table img:nth-of-type(2n) {
+    float: right;
+    margin-left: 30px;
+}
+.after_table p {
+	line-height: 21px;
+}
+.table_header {
+    width: 92%;
+    border-radius: 10px;
+    background-color: #0be7e5;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+
+}
+main table {
+	width: 100%;
+	height: auto;
+}
+main table td {
+	text-align: center;
+	padding-bottom: 5px;
+}
+main table {
+	border-collapse: collapse;
+}
+.grey_line {
+	height: 3px;
+	width: 100%;
+	background-color: #dcdcdc;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+footer {
+    background-color: #16bebd;
+    padding-top: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+footer .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1240px;
+}
+footer .logo {
+margin: 0 auto 40px;
+display: block;
+}
+footer .contacts {
+    font-size: 16px;
+    font-weight: 600;
+    width: 99%;
+    margin: 0 auto 60px;
+    text-align: center; 
+    color: #fff; 
+}
+footer .contacts > div {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+footer .contacts .phones a {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    color: #fff;
+}
+.social h4 {
+    margin-bottom: 10px;
+}
+footer .copyrights {
+    background-color: #30e7e3;
+    height: 70px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+.burger {
+    width: 25px;
+    height: 20px;
+    border: 2px solid #333;
+    border-left-width: 0;
+    border-right-width: 0;
+    position: absolute;
+    right: 30px;
+    top: 42px;
+    z-index: 101;
+    display: block;
+}
+.burger:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 2px;
+    background-color: #333;
+    top: 9px;
+    border-radius: 2px;
+    width: 100%;
+}
+header ul {
+	display: none;
+}
+.hidden_logo {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+}
+.contacts .address, .contacts .phones, .contacts .social {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	
+}
+.img_gallery img {
+    width: calc(45% - 8px);
+    height: auto;
+}
+}
+
+
+/*@media screen and (max-width: 768px) {
+.content_in_main {
+	width: 100%;
+	height: auto;
+	display: block; 
+	/*display: flex;
+	flex-direction: column;*/
+/*main h2 {
+	font-size: 28px;
+    /*line-height: 1.3;*/
+
+
+
+
+
+@media screen and (max-width: 968px) {
+	.content_in_main {
+    width: 100%;
+    height: auto;
+}
+.service p {
+     width: 100%;
+    height: auto;
+}
+
+}
